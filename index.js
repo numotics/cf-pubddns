@@ -23,7 +23,7 @@ db.run(`CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     subdomain TEXT NOT NULL,
     recordId TEXT NOT NULL,
-    passkey TEXT NOT NULL
+    password TEXT NOT NULL
 )`);
 
 app.post('/update', (req, res) => {
