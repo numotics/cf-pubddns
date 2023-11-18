@@ -65,3 +65,7 @@ app.post('/update', (req, res) => {
         }
     });
 });
+
+app.get('/status', (req, res) => {
+    res.status(200).send('DDNS Service is up!');
+});
